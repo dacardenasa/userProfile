@@ -1,0 +1,55 @@
+.form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+
+  .control-box {
+    display: flex;
+    flex-direction: column;
+
+    .form-label {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .textfield {
+      width: 100%;
+      height: 40px;
+      border-radius: 8px;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+    }
+
+    .label-error {
+      font-size: 12px;
+      color: red;
+    }
+
+    .textfield-error {
+      border: 1px solid red;
+    }
+
+    .text-area-h {
+      height: 100px;
+    }
+  }
+
+  .button {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    background: #c3c31d;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+
+  @media (min-width: 768px) {
+    width: 500px;
+  }
+}

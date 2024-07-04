@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  .list-container {
+    list-style: none;
+    display: flex;
+    column-gap: 8px;
+    visibility: visible;
+    @media (max-width: 768px) {
+      visibility: hidden;
+      width: 100vw;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      z-index: 100;
+      top: 80px;
+      left: 0;
+      background: #3B99BA;
+      & li {
+        padding: 8px;
+        & a {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .button {
+    border: none;
+    background-color: transparent;
+  }
+}
