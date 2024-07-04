@@ -6,6 +6,10 @@
   justify-content: center;
   align-items: center;
   padding: 96px 16px 16px 16px;
+  overflow: auto;
+  @media (max-width: 768px) {
+    height: auto;
+  }
   .contentBox {
     width: 100%;
     @media (min-width: 768px) {

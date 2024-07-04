@@ -17,14 +17,14 @@ export const Menu = () => {
   const toggleMenu = () => setIsMenuOpen((c) => !c);
 
   useEffect(() => {
-    if (size.width > 768) {
+    if (size.width >= 768) {
       setIsMenuOpen(false);
     }
   }, [size]);
 
   return (
     <nav className={styles.container}>
-      {size.width && size.width < 768 ? (
+      {size.width && size.width <= 768 ? (
         <>
           <button onClick={toggleMenu} className={styles.button}>
             {isMenuOpen ? (
